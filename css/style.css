@@ -1,0 +1,500 @@
+/*
+  Theme Name: 
+  Author:
+  Support: admin@gmail.com
+  Description:
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap');
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+	
+}
+.f-left {
+	float: left;
+}
+.f-right {
+	float: right;
+}
+.fix {
+	overflow: hidden;
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover{
+	color: #646464;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+	color: #313131;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: ;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 17px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #222222;
+	margin-bottom: 15px;
+	text-align: justify;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	columns: #222222;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+
+/* button style */
+.btn {
+	-moz-user-select: none;
+	background: #333 none repeat scroll 0 0;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1.1;
+	margin-bottom: 0;
+	padding: 20px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	white-space: nowrap;
+	position: relative;
+	border-radius: 0;
+	
+}
+.btn:hover{
+	color: #d6b161;
+	transition: .3s;
+}
+
+
+/* =============== Start Header Area================*/
+
+	/*Header Top Area Logo & Main Menu*/
+	.header-area {
+		background: rgba(159, 159, 159, 0.2);
+	}	
+	.logo {
+		color: rebeccapurple;
+		font-weight: 700;
+	  }
+	  .logo a {
+		color: rebeccapurple;
+	
+	  }
+	.main-munu {
+		float: right;
+	}
+	.main-munu ul li {
+		display: inline-block;
+		margin-left: 24px;
+	}
+	.main-munu ul li a {
+		color: rebeccapurple;
+		text-transform: capitalize;
+
+	}
+	.main-munu ul li:hover> a{
+		color: #222;
+		transition: .3s;
+	} 
+
+/* =============== End Header Area================*/
+
+
+/* =============== Slider Area Area Start================*/
+	.single-slider {
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.slider-content h2 {
+		color: gray;
+		font-size: 30px;
+		font-weight: 600;
+		line-height: 25px;
+	}
+	.slider-content span {
+		line-height: 0px;
+	}
+	.slider-content p {
+		margin: 0;
+		padding: 0;
+	}
+	.slider-content a{
+		font-weight: 600;
+	}
+/* =============== End Slider Area Area ================*/
+
+
+
+/* =============== Start About Us Area================*/
+	.section-content h2 {
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 600;
+		color: rebeccapurple;
+	  }
+	  .section-content span {
+		position: absolute;
+		content: "";
+		width: 115px;
+		height: 2px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		background: rebeccapurple;
+	  }
+	  .about-head h2 {
+		color: gray;
+		font-size: 30px;
+		font-weight: 600;
+		line-height: 25px;
+	}
+	.about-head h4 {
+		font-size: 17px;
+		font-weight: 500;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	  }
+	  .about-head p {
+		color: gray;
+		text-align: justify;
+		padding-top: 12px;
+	}
+	th {
+		font-size: 16px;
+		font-weight: 400;
+		padding-bottom: 10px;
+		display: inline-block;
+		font-size: 12px;
+	}
+	td {
+		padding-left: 87px;
+		font-size: 12px;
+	}
+	.about-social{
+		padding-top: 10px;
+	}
+	.about-social a {
+		height: 40px;
+		width: 40px;
+		display: inline-block;
+		background: #222;
+		text-align: center;
+		padding-top: 10px;
+		border-radius: 30px;
+		margin-top: 7px;
+		margin-left: 14px;
+	}
+	.about-social a:first-child{
+		margin-left: 0;
+	}
+	.about-social a:hover {
+		color: #fff;
+	}
+  /* =============== Start About Us Area================*/
+
+  /* =============== Start Skill Area================*/
+	.skill-content h2 {
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 600;
+		color: rebeccapurple;
+	}
+	.skill-content span {
+		position: absolute;
+		content: "";
+		width: 115px;
+		height: 2px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		background: rebeccapurple;
+	}
+	.design-skill-content h2 {
+		font-size: 35px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.development-skill-content h2 {
+		font-size: 35px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+		/*============ Progress Bar==================*/
+		.progress {
+			height: 28px;
+			text-align: center;
+			background: repeating-radial-gradient;
+		}
+		.progress-bar {
+			display: inline-block;
+			padding-top: 5px;
+			background: #222;
+			font-weight: 600;
+		}
+
+  /* =============== End Skill Area================*/
+
+
+/* =============== Start Education Area ================*/
+
+	.edu-title-content h2 {
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 600;
+		color: rebeccapurple;
+	}
+	.edu-title-content span {
+		position: absolute;
+		content: "";
+		width: 115px;
+		height: 2px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		background: rebeccapurple;
+	}
+
+	.edu-content h3 {
+		font-weight: 600;
+		font-size: 23px;
+		padding-bottom: 0px;
+		line-height: 11px;
+	  }
+	  .edu-content span {
+		font-size: 17px;
+		font-weight: 500;
+		padding-bottom: 15px;
+		display: inline-block;
+	  }
+
+/* =============== End Education Area ================*/
+  
+
+/* =============== Start Contact Info Area ================*/
+
+	.contact-title-content h2{
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 600;
+		color: rebeccapurple;
+	}
+	.contact-title-content span {
+		position: absolute;
+		content: "";
+		width: 115px;
+		height: 2px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		background: rebeccapurple;
+	}
+
+	.contact-info-title h3 {
+		font-weight: 600;
+		text-transform: uppercase;
+		padding-bottom: 26px;
+	  }
+	  .contact-info-detail h5 {
+		font-weight: 600;
+		text-transform: uppercase;
+	  }
+	  .contact-info-detail a {
+		padding-bottom: 31px;
+		display: inline-block;
+		color: #222;
+	  }
+
+	  .send-message h3 {
+		font-weight: 600;
+		text-transform: uppercase;
+		padding-bottom: 6px;
+	}
+
+	.form-group {
+		margin-bottom: 0;
+	}
+	.form-check {
+		padding-top: 6px;
+		padding-bottom: 8px;
+	}
+	textarea {
+		margin-top: 15px;
+	}
+/* =============== End Contact Info Area ================*/
+
+
+/*Header Top Area Logo & Main Menu*/	
+.footer-area {
+	background: rgba(159, 159, 159, 0.2);
+}
+.copyright-content {
+	color: rebeccapurple;
+	font-weight: 500;
+  }
+  .copyright-content a {
+	color: rebeccapurple;
+
+  }
+.main-munu {
+	float: right;
+}
+.main-munu ul li {
+	display: inline-block;
+	margin-left: 24px;
+}
+.main-munu ul li a {
+	color: rebeccapurple;
+	text-transform: capitalize;
+
+}
+.main-munu ul li:hover> a{
+	color: #222;
+	transition: .3s;
+} 
+/* =============== End Header Area================*/
